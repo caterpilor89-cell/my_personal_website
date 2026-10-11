@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Arti Verma — technology operations, regulatory compliance, and curious exploration of AI product thinking.">
+<title>Arti Verma — Personal Profile</title>
+<style>
+:root{--ink:#171715;--paper:#f6f3ed;--white:#fffdf9;--muted:#77736b;--line:#d8d2c8;--gold:#a18b62}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.topbar{height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;border-bottom:1px solid var(--line);font-size:10px;letter-spacing:.17em;text-transform:uppercase}
+.monogram{font-family:Georgia,'Times New Roman',serif;font-size:23px;letter-spacing:.08em}
+.topbar nav{display:flex;gap:26px}
+.hero{min-height:590px;display:grid;grid-template-columns:1.1fr .9fr;padding:7vw 10vw 6vw;gap:5vw;align-items:center;position:relative;overflow:hidden}
+.kicker{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);margin:0 0 25px}
+h1,h2,h3,.serif{font-family:Georgia,'Times New Roman',serif;font-weight:400}
+h1{font-size:clamp(54px,8vw,112px);line-height:.88;letter-spacing:-.065em;margin:0 0 28px}
+h1 span{font-style:italic;color:#8e8068}
+.intro{font-family:Georgia,'Times New Roman',serif;font-size:clamp(18px,2vw,24px);line-height:1.5;max-width:490px}
+.hero-note{font-size:11px;line-height:1.8;color:var(--muted);max-width:380px;margin-top:30px}
+.hero-art{min-height:390px;position:relative;display:flex;align-items:center;justify-content:center}
+.arch{width:min(100%,370px);height:430px;border-radius:190px 190px 0 0;background:#e6e0d6;position:relative;overflow:hidden}
+.arch:before{content:"";position:absolute;inset:22px;border:1px solid #c9c0b3;border-radius:180px 180px 0 0}
+.arch:after{content:"AV";position:absolute;inset:0;display:grid;place-items:center;font-family:Georgia,serif;font-size:clamp(100px,16vw,190px);letter-spacing:-.1em;color:#b7aa96}
+.art-caption{position:absolute;right:-4px;bottom:28px;writing-mode:vertical-rl;letter-spacing:.22em;text-transform:uppercase;font-size:9px;color:var(--muted)}
+.section{padding:88px 10vw;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:44px}
+.section-head h2{font-size:clamp(38px,5vw,64px);letter-spacing:-.04em;margin:0}
+.section-head p{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:8vw}
+.label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.about-copy{font-family:Georgia,serif;font-size:clamp(21px,2.6vw,32px);line-height:1.45;margin:0;max-width:760px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.skill{background:var(--paper);padding:26px 24px;min-height:145px}
+.skill .num{font-family:Georgia,serif;font-size:13px;color:var(--gold)}
+.skill h3{font-size:22px;margin:20px 0 10px}
+.skill p{font-size:12px;line-height:1.65;color:var(--muted);margin:0}
+.timeline{border-top:1px solid var(--line)}
+.role{display:grid;grid-template-columns:1fr 2fr;gap:4vw;padding:27px 0;border-bottom:1px solid var(--line)}
+.role-date{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);line-height:1.8}
+.role h3{font-size:28px;margin:0 0 6px}
+.role .org{font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.role p{font-size:12px;line-height:1.8;color:var(--muted);max-width:620px;margin:12px 0 0}
+.explore{background:#eae5dc}
+.explore-grid{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:start}
+.explore h2{font-size:clamp(42px,6vw,74px);line-height:.98;letter-spacing:-.05em;margin:0}
+.explore-copy{font-size:14px;line-height:1.9;color:#5e5a52}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.pill{border:1px solid #c8bfb1;padding:9px 12px;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+.credentials{display:flex;gap:12px;flex-wrap:wrap}
+.credential{border:1px solid var(--line);padding:17px 20px;font-size:12px}
+.contact{background:var(--ink);color:var(--white);padding:86px 10vw 35px}
+.contact h2{font-size:clamp(48px,8vw,100px);line-height:.9;letter-spacing:-.06em;margin:0 0 35px}
+.contact h2 em{color:#c5b89e;font-weight:400}
+.contact-links{display:flex;gap:24px;flex-wrap:wrap;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.contact-links a{padding-bottom:7px;border-bottom:1px solid #6e6b63}
+.footer{display:flex;justify-content:space-between;gap:20px;margin-top:90px;padding-top:20px;border-top:1px solid #45443f;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#aaa69d}
+@media(max-width:700px){.topbar{padding:0 6vw}.topbar nav{gap:12px;font-size:8px}.hero{grid-template-columns:1fr;padding:65px 7vw 45px;gap:20px}.hero-art{min-height:300px}.arch{height:330px;width:260px}.section{padding:62px 7vw}.about-grid,.explore-grid{grid-template-columns:1fr;gap:25px}.skills{grid-template-columns:1fr}.skill{min-height:auto}.role{grid-template-columns:1fr;gap:12px}.section-head{align-items:start;flex-direction:column}.contact{padding:65px 7vw 28px}.footer{margin-top:60px;flex-direction:column}.art-caption{right:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="monogram" href="#home" aria-label="Arti Verma home">AV.</a>
+  <nav aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#exploring">Exploring</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div>
+    <p class="kicker">Technology · Operations · Curiosity</p>
+    <h1>Arti<br><span>Verma.</span></h1>
+    <p class="intro">Bringing clarity to complex operations — with a growing curiosity for how AI can turn information into useful experiences.</p>
+    <p class="hero-note">Assistant Vice President at Deutsche Bank · Pune, India<br>Focused on service operations, regulatory compliance and continuous learning.</p>
+  </div>
+  <div class="hero-art" aria-label="Decorative monogram artwork">
+    <div class="arch"></div>
+    <div class="art-caption">A considered approach · Est. 2009</div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-head"><h2>A little about me</h2><p>01 / The perspective</p></div>
+  <div class="about-grid">
+    <div class="label">My point of view</div>
+    <p class="about-copy">I work at the intersection of dependable technology operations, thoughtful problem-solving and clear communication. I enjoy understanding how systems work — and finding better ways to explain, improve and build around them.</p>
+  </div>
+</section>
+
+<section class="section" id="strengths">
+  <div class="section-head"><h2>What I bring</h2><p>02 / Areas of focus</p></div>
+  <div class="skills">
+    <article class="skill"><div class="num">01</div><h3>Operational clarity</h3><p>Incident investigation, service monitoring, escalations, service levels and coordination across teams.</p></article>
+    <article class="skill"><div class="num">02</div><h3>Risk & compliance</h3><p>Regulatory submissions, operational metrics, reporting and a structured approach to process discipline.</p></article>
+    <article class="skill"><div class="num">03</div><h3>Communication</h3><p>Working across onshore and offshore teams, sharing updates and translating issues into clear next steps.</p></article>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="section-head"><h2>Experience, in brief</h2><p>03 / The journey</p></div>
+  <div class="timeline">
+    <article class="role"><div class="role-date">March 2022 — Present<br>Pune, India</div><div><h3>Assistant Vice President</h3><div class="org">Deutsche Bank</div><p>Service desk and application operations, with a focus on investigation, incident coordination, operational metrics and service reliability.</p></div></article>
+    <article class="role"><div class="role-date">December 2017 — March 2022<br>Pune / Pimpri-Chinchwad</div><div><h3>Associate</h3><div class="org">Deutsche Bank</div><p>Supported application services, incident queues, change requests and collaboration across technical support teams.</p></div></article>
+    <article class="role"><div class="role-date">April 2015 — December 2017<br>Pune, India</div><div><h3>Consultant</h3><div class="org">Capgemini</div><p>Technology consulting experience supporting application and service operations.</p></div></article>
+    <article class="role"><div class="role-date">October 2013 — November 2014<br>Bengaluru, India</div><div><h3>CSR</h3><div class="org">IBM India Pvt. Ltd.</div><p>Early-career experience in a technology services environment.</p></div></article>
+    <article class="role"><div class="role-date">January 2009 — July 2013<br>Gurugram, India</div><div><h3>Senior Analyst</h3><div class="org">Vertex Data Science</div><p>Application support, issue investigation, incident monitoring, reporting and cross-team coordination.</p></div></article>
+  </div>
+</section>
+
+<section class="section explore" id="exploring">
+  <div class="explore-grid">
+    <div><p class="kicker">Beyond the day job</p><h2>Learning by<br><em>making sense.</em></h2></div>
+    <div>
+      <p class="explore-copy">Recently, I’ve been exploring the ideas behind AI and product building: how vector embeddings represent meaning, how retrieval-augmented generation (RAG) connects models with a knowledge base, and how product ideas become clear requirements. I learn best by breaking a concept into steps and turning it into something I can see, test and explain.</p>
+      <div class="pill-row"><span class="pill">AI & RAG</span><span class="pill">Vector embeddings</span><span class="pill">Product thinking</span><span class="pill">PRD analysis</span><span class="pill">Visual learning</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="credentials">
+  <div class="section-head"><h2>Credentials</h2><p>04 / Foundations</p></div>
+  <div class="credentials"><div class="credential">ISO 27001 Lead Auditor — Information Security</div><div class="credential">ITIL v3</div></div>
+</section>
+</main>
+<footer class="contact" id="contact">
+  <p class="kicker" style="color:#c5b89e">The next conversation</p>
+  <h2>Let’s make<br><em>things clearer.</em></h2>
+  <div class="contact-links">
+    <a href="mailto:arti.verma0407@gmail.com">Email Arti ↗</a>
+    <a href="https://www.linkedin.com/in/arti-verma-09353397/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+  </div>
+  <div class="footer"><span>Arti Verma · Pune, India</span><span>Personal profile · 2026</span><a href="#home">Back to top ↑</a></div>
+</footer>
+</body>
+</html>
